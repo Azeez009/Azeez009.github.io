@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sheik Abdul Azeez | L1 Technical Support & IT Service Desk</title>
+  <meta name="description" content="Portfolio of Sheik Abdul Azeez — L1 Technical Support professional with 2+ years of experience, 98.7% SLA compliance and 97% first-call resolution." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2310b981'/><text x='50' y='66' font-size='48' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23061a12'>SA</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-mark">SA</span>
+        <span class="nav__logo-text">Azeez<span class="accent">.</span></span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Main">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#certifications" class="nav__link">Certifications</a>
+        <a href="#terminal" class="nav__link">Terminal</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle light / dark theme" title="Toggle theme (T)">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="assets/Sheik_Abdul_Azeez_Resume.pdf" download class="btn btn--small btn--primary nav__cta">Resume</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="status-pill reveal">
+            <span class="status-dot"></span>
+            Open to opportunities · 1-month notice
+          </div>
+          <p class="hero__hello reveal">Hi, I'm</p>
+          <h1 class="hero__name reveal">Sheik Abdul Azeez</h1>
+          <h2 class="hero__role reveal">
+            <span class="mono accent">&gt;</span>
+            <span id="typed" class="typed"></span><span class="caret">|</span>
+          </h2>
+          <p class="hero__summary reveal">
+            I keep people productive. With <strong>2+ years</strong> of L1 technical support experience at
+            <strong>Genpact</strong>, I resolve <strong>30–50+ tickets a day</strong> across voice, chat and email,
+            from Windows and macOS issues to DNS, DHCP and VPN problems.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="#contact" class="btn btn--primary magnetic">
+              Let's talk
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="assets/Sheik_Abdul_Azeez_Resume.pdf" download class="btn btn--ghost magnetic">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download Resume
+            </a>
+          </div>
+          <div class="hero__meta reveal">
+            <span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Hyderabad, India
+            </span>
+            <a href="https://linkedin.com/in/sheik-abdul-azeez" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:azeezsheik7867@gmail.com">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+        <!-- Live ticket simulator -->
+        <div class="hero__visual reveal">
+          <div class="ticket-console tilt" id="ticketConsole">
+            <div class="ticket-console__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="ticket-console__title mono">service-desk / live queue</span>
+            </div>
+            <div class="ticket-console__body">
+              <div class="ticket" id="ticket">
+                <div class="ticket__top">
+                  <span class="ticket__id mono" id="ticketId">INC0010421</span>
+                  <span class="ticket__status" id="ticketStatus" data-state="new">New</span>
+                </div>
+                <h3 class="ticket__title" id="ticketTitle">VPN not connecting from home</h3>
+                <p class="ticket__cat mono" id="ticketCat">Category: Network · Priority: P3</p>
+                <div class="ticket__progress"><span id="ticketBar"></span></div>
+                <ul class="ticket__log mono" id="ticketLog"></ul>
+              </div>
+              <div class="queue-stats">
+                <div><span class="mono" id="resolvedToday">0</span><small>resolved today</small></div>
+                <div><span class="mono">98.7%</span><small>within SLA</small></div>
+                <div><span class="mono">97%</span><small>first-call fix</small></div>
+              </div>
+            </div>
+          </div>
+          <p class="hero__visual-caption mono">↑ a simulated look at a typical shift</p>
+        </div>
+      </div>
+
+      <a href="#stats" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" id="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <div class="stat__value"><span class="counter" data-target="2">0</span>+</div>
+          <div class="stat__label">Years in Technical Support</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__value">30–<span class="counter" data-target="50">0</span>+</div>
+          <div class="stat__label">Tickets resolved per day</div>
+        </div>
+        <div class="stat stat--ring reveal">
+          <svg class="ring" viewBox="0 0 120 120"><circle class="ring__bg" cx="60" cy="60" r="52"/><circle class="ring__fg" cx="60" cy="60" r="52" data-percent="98.7"/></svg>
+          <div class="stat__value"><span class="counter" data-target="98.7" data-decimals="1">0</span>%</div>
+          <div class="stat__label">SLA Compliance</div>
+        </div>
+        <div class="stat stat--ring reveal">
+          <svg class="ring" viewBox="0 0 120 120"><circle class="ring__bg" cx="60" cy="60" r="52"/><circle class="ring__fg" cx="60" cy="60" r="52" data-percent="97"/></svg>
+          <div class="stat__value"><span class="counter" data-target="97">0</span>%</div>
+          <div class="stat__label">First-Call Resolution</div>
+        </div>
+        <div class="stat stat--ring reveal">
+          <svg class="ring" viewBox="0 0 120 120"><circle class="ring__bg" cx="60" cy="60" r="52"/><circle class="ring__fg" cx="60" cy="60" r="52" data-percent="96"/></svg>
+          <div class="stat__value"><span class="counter" data-target="96">0</span>%</div>
+          <div class="stat__label">Customer Satisfaction</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">01 · about</span>
+          <h2 class="section__title">Calm under pressure, <span class="accent">fast at fixing.</span></h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I'm an <strong>L1 Technical Support</strong> professional with 2+ years of experience supporting end users
+              across voice, chat and email. I troubleshoot <strong>Windows 10/11, macOS and ChromeOS</strong>, software,
+              basic hardware and network issues, and I take every ticket from first contact through to resolution.
+            </p>
+            <p>
+              I work hands-on with <strong>Jira (1.5 years)</strong>, <strong>ServiceNow (5 months)</strong>,
+              <strong>Active Directory</strong> password resets, <strong>Microsoft 365</strong>, and remote tools like
+              <strong>RDP</strong> and <strong>AnyDesk</strong>. I look for recurring issues, find their root cause and
+              document the fix, so the same problem doesn't come back as a new ticket.
+            </p>
+            <p>
+              Outside the queue, I'm a <strong>district-level chess winner</strong>. I bring the same thinking to
+              troubleshooting: read the board, eliminate possibilities, then make the right move.
+            </p>
+          </div>
+
+          <div class="about__facts reveal">
+            <div class="fact">
+              <span class="fact__icon">📍</span>
+              <div><small>Location</small><strong>Hyderabad, India</strong></div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">💼</span>
+              <div><small>Current role</small><strong>Process Associate, Genpact</strong></div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">🎓</span>
+              <div><small>Education</small><strong>BCA, 2021 – 2024</strong></div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">⏱️</span>
+              <div><small>Availability</small><strong>1-month notice</strong></div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">♟️</span>
+              <div><small>Off the clock</small><strong>District-level chess winner</strong></div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon">⭐</span>
+              <div><small>Performance</small><strong>Consistently high ratings</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- How I troubleshoot -->
+        <div class="process reveal">
+          <h3 class="process__title">How I handle a ticket</h3>
+          <div class="process__steps" id="processSteps">
+            <button class="process__step is-active" data-step="0"><span class="mono">01</span>Log</button>
+            <button class="process__step" data-step="1"><span class="mono">02</span>Diagnose</button>
+            <button class="process__step" data-step="2"><span class="mono">03</span>Resolve</button>
+            <button class="process__step" data-step="3"><span class="mono">04</span>Escalate</button>
+            <button class="process__step" data-step="4"><span class="mono">05</span>Prevent</button>
+          </div>
+          <div class="process__detail" id="processDetail"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">02 · experience</span>
+          <h2 class="section__title">Where I've <span class="accent">worked & learned</span></h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"><span></span></div>
+            <div class="card timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Process Associate, Technical Support Services</h3>
+                  <p class="timeline__org">Genpact</p>
+                </div>
+                <span class="badge badge--live"><span class="status-dot"></span>Jul 2024 – Present</span>
+              </div>
+              <ul class="timeline__list">
+                <li>Provide <strong>L1 technical support</strong> to end users through voice, chat and email, resolving <strong>30–50+ tickets daily</strong>.</li>
+                <li>Achieved <strong>98.7% SLA compliance</strong>, <strong>97% first-call resolution</strong> and <strong>96% customer satisfaction</strong>.</li>
+                <li>Diagnose and resolve Windows 10/11, macOS and ChromeOS, application, connectivity, <strong>DNS, DHCP and VPN</strong> issues using structured troubleshooting steps.</li>
+                <li>Manage the end-to-end ticket lifecycle in <strong>Jira and ServiceNow</strong>: logging, prioritisation, escalation and resolution within SLA.</li>
+                <li>Perform password resets and handle access/permission requests using <strong>Active Directory</strong> and <strong>Microsoft 365</strong>.</li>
+                <li>Provide remote support using <strong>Remote Desktop (RDP)</strong> and <strong>AnyDesk</strong> to resolve issues and minimise downtime.</li>
+                <li>Identify recurring issues, perform <strong>root cause analysis</strong> and document solutions to reduce repeat tickets; escalate complex cases to L2 teams with clear notes.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">Jira</span><span class="tag">ServiceNow</span><span class="tag">Active Directory</span>
+                <span class="tag">Microsoft 365</span><span class="tag">RDP</span><span class="tag">AnyDesk</span>
+                <span class="tag">DNS / DHCP / VPN</span><span class="tag">RCA</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--edu"><span></span></div>
+            <div class="card timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3>Bachelor of Computer Applications (BCA)</h3>
+                  <p class="timeline__org">Aditya Degree College, Amalapuram · Adikavi Nannaya University</p>
+                </div>
+                <span class="badge">2021 – 2024</span>
+              </div>
+              <p class="timeline__desc">
+                Built a foundation in computing, networking, databases and operating systems, which I now use every day
+                on the service desk.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">03 · skills</span>
+          <h2 class="section__title">My <span class="accent">toolkit</span></h2>
+          <p class="section__sub">Filter by category, or search for a skill.</p>
+        </div>
+
+        <div class="skills__controls reveal">
+          <div class="filters" id="skillFilters" role="tablist">
+            <button class="filter is-active" data-filter="all">All</button>
+            <button class="filter" data-filter="os">Operating Systems</button>
+            <button class="filter" data-filter="network">Networking</button>
+            <button class="filter" data-filter="itsm">ITSM & Remote Tools</button>
+            <button class="filter" data-filter="identity">Identity & M365</button>
+            <button class="filter" data-filter="other">Support & Data</button>
+          </div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="skillSearch" placeholder="Search skills…" aria-label="Search skills" />
+          </label>
+        </div>
+
+        <div class="skills__grid" id="skillsGrid"><!-- injected by JS --></div>
+        <p class="skills__empty" id="skillsEmpty" hidden>No skills match that search.</p>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section section--alt" id="certifications">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">04 · certifications</span>
+          <h2 class="section__title">Always <span class="accent">learning</span></h2>
+        </div>
+
+        <div class="certs__grid">
+          <article class="cert card tilt reveal">
+            <div class="cert__logo cert__logo--google">G</div>
+            <h3>Google IT Support Professional Certificate</h3>
+            <p class="cert__issuer">Coursera</p>
+            <p class="cert__desc">Troubleshooting, networking, operating systems, system administration and IT security fundamentals.</p>
+          </article>
+          <article class="cert card tilt reveal">
+            <div class="cert__logo cert__logo--cisco">C</div>
+            <h3>Networking Basics</h3>
+            <p class="cert__issuer">Cisco Networking Academy</p>
+            <p class="cert__desc">Network types, IP addressing, TCP/IP, and how devices communicate across LANs and the internet.</p>
+          </article>
+          <article class="cert card tilt reveal">
+            <div class="cert__logo cert__logo--ms">M</div>
+            <h3>Microsoft Learn: IT Support & Fundamentals</h3>
+            <p class="cert__issuer">Microsoft</p>
+            <p class="cert__desc">Modules covering Microsoft 365, Windows administration and core IT support fundamentals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TERMINAL ============ -->
+    <section class="section" id="terminal">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">05 · terminal</span>
+          <h2 class="section__title">Troubleshoot <span class="accent">me</span></h2>
+          <p class="section__sub">An interactive command line. Type <code>help</code> to get started. Try <code>ping azeez</code>, <code>ipconfig</code> or <code>chess</code>.</p>
+        </div>
+
+        <div class="terminal reveal" id="term">
+          <div class="terminal__bar">
+            <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            <span class="terminal__title mono">C:\Users\Visitor&gt; azeez-portfolio.exe</span>
+          </div>
+          <div class="terminal__body mono" id="termBody">
+            <div id="termOutput"></div>
+            <div class="terminal__input-row">
+              <span class="terminal__prompt">visitor@azeez:~$</span>
+              <input type="text" id="termInput" class="terminal__input" autocomplete="off" spellcheck="false" aria-label="Terminal input" />
+            </div>
+          </div>
+          <div class="terminal__chips" id="termChips">
+            <button data-cmd="help">help</button>
+            <button data-cmd="whoami">whoami</button>
+            <button data-cmd="stats">stats</button>
+            <button data-cmd="skills">skills</button>
+            <button data-cmd="ping azeez">ping azeez</button>
+            <button data-cmd="ipconfig">ipconfig</button>
+            <button data-cmd="contact">contact</button>
+            <button data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker mono">06 · contact</span>
+          <h2 class="section__title">Have an opening? <span class="accent">Let's connect.</span></h2>
+          <p class="section__sub">I'm open to L1/L2 Technical Support, IT Support and Service Desk roles.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__cards reveal">
+            <div class="contact-card">
+              <span class="contact-card__icon">✉️</span>
+              <div>
+                <small>Email</small>
+                <a href="mailto:azeezsheik7867@gmail.com">azeezsheik7867@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="azeezsheik7867@gmail.com" aria-label="Copy email">Copy</button>
+            </div>
+            <div class="contact-card">
+              <span class="contact-card__icon">📞</span>
+              <div>
+                <small>Phone</small>
+                <a href="tel:+917013894186">+91 70138 94186</a>
+              </div>
+              <button class="copy-btn" data-copy="+91 7013894186" aria-label="Copy phone number">Copy</button>
+            </div>
+            <div class="contact-card">
+              <span class="contact-card__icon">💬</span>
+              <div>
+                <small>WhatsApp</small>
+                <a href="https://wa.me/917013894186" target="_blank" rel="noopener">Message on WhatsApp</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <span class="contact-card__icon">🔗</span>
+              <div>
+                <small>LinkedIn</small>
+                <a href="https://linkedin.com/in/sheik-abdul-azeez" target="_blank" rel="noopener">in/sheik-abdul-azeez</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form card reveal" id="contactForm" novalidate>
+            <div class="field">
+              <input type="text" id="cfName" name="name" placeholder=" " required />
+              <label for="cfName">Your name</label>
+              <span class="field__error">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <input type="email" id="cfEmail" name="email" placeholder=" " required />
+              <label for="cfEmail">Your email</label>
+              <span class="field__error">Please enter a valid email.</span>
+            </div>
+            <div class="field">
+              <select id="cfTopic" name="topic">
+                <option>Job opportunity</option>
+                <option>Interview request</option>
+                <option>Freelance / IT help</option>
+                <option>Just saying hi</option>
+              </select>
+              <label for="cfTopic" class="label--static">Topic</label>
+            </div>
+            <div class="field">
+              <textarea id="cfMsg" name="message" rows="5" placeholder=" " required maxlength="1000"></textarea>
+              <label for="cfMsg">Message</label>
+              <span class="field__error">Please write a short message.</span>
+              <span class="field__count mono" id="cfCount">0 / 1000</span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">
+              Send message
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form__note">This opens your email app with the message ready to send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Sheik Abdul Azeez · Built with HTML, CSS & JavaScript</p>
+      <p class="mono footer__hint">Tip: press <kbd>T</kbd> to switch theme · <kbd>/</kbd> to open the terminal</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
