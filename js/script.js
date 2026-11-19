@@ -498,7 +498,7 @@
     certs: {
       desc: "Certifications",
       run: () => printLines([
-        "🏅 Google IT Support Professional Certificate: Coursera",
+        '🏅 Google IT Support Professional Certificate: Coursera, Jul 2026 (<a href="https://coursera.org/verify/professional-cert/HTBHYRDTT5C3" target="_blank" rel="noopener">verify</a>)',
         "🏅 Networking Basics: Cisco Networking Academy",
         "🏅 Microsoft Learn (IT Support & Fundamentals): Microsoft",
       ]),
@@ -672,6 +672,34 @@
     'Type <span class="t-blue">help</span> to see available commands, or click a shortcut below.',
     "",
   ]);
+
+  /* ---------- Certificate lightbox ---------- */
+  const lightbox = $("#lightbox");
+  const lightboxImg = $("#lightboxImg");
+  let lastFocus = null;
+  const openLightbox = (src, caption) => {
+    lastFocus = document.activeElement;
+    lightboxImg.src = src;
+    lightboxImg.alt = caption;
+    $("#lightboxCaption").textContent = caption;
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+    requestAnimationFrame(() => lightbox.classList.add("is-open"));
+    $("#lightboxClose").focus();
+  };
+  const closeLightbox = () => {
+    if (lightbox.hidden) return;
+    lightbox.classList.remove("is-open");
+    document.body.style.overflow = "";
+    setTimeout(() => { lightbox.hidden = true; }, 300);
+    if (lastFocus) lastFocus.focus({ preventScroll: true });
+  };
+  $$("[data-lightbox]").forEach((el) =>
+    el.addEventListener("click", () => openLightbox(el.dataset.lightbox, el.dataset.caption || ""))
+  );
+  $("#lightboxClose").addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeLightbox(); });
 
   /* ---------- Keyboard shortcuts ---------- */
   document.addEventListener("keydown", (e) => {

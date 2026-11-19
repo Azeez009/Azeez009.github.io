@@ -354,6 +354,41 @@ kbd { font-family: var(--font-mono); border: 1px solid var(--border); border-bot
 .cert h3 { font-family: var(--font-display); font-size: 1.12rem; line-height: 1.35; }
 .cert__issuer { color: var(--accent); font-size: .9rem; font-weight: 500; margin-top: .3rem; }
 .cert__desc { color: var(--text-muted); font-size: .9rem; margin-top: .8rem; }
+.cert__thumb {
+  display: block; position: relative; width: 100%; margin-top: 1.2rem; border-radius: var(--radius-sm);
+  overflow: hidden; border: 1px solid var(--border); background: #fff; cursor: zoom-in;
+}
+.cert__thumb img { width: 100%; height: auto; transition: transform .5s var(--ease); }
+.cert__thumb-label {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: .45rem;
+  background: rgba(6, 12, 18, .6); color: #fff; font-weight: 600; font-size: .88rem;
+  opacity: 0; transition: opacity .3s;
+}
+.cert__thumb:hover img, .cert__thumb:focus-visible img { transform: scale(1.05); }
+.cert__thumb:hover .cert__thumb-label, .cert__thumb:focus-visible .cert__thumb-label { opacity: 1; }
+.cert__verify {
+  display: inline-flex; align-items: center; gap: .35rem; margin-top: 1rem;
+  font-size: .85rem; font-weight: 600; color: var(--accent);
+}
+.cert__verify:hover { text-decoration: underline; }
+
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0; z-index: 400; display: grid; place-items: center; padding: 2rem;
+  background: rgba(4, 8, 12, .88); backdrop-filter: blur(6px);
+  opacity: 0; transition: opacity .3s var(--ease);
+}
+.lightbox[hidden] { display: none; }
+.lightbox.is-open { opacity: 1; }
+.lightbox__figure { max-width: min(1100px, 100%); transform: scale(.94); transition: transform .35s var(--ease); }
+.lightbox.is-open .lightbox__figure { transform: none; }
+.lightbox__figure img { width: 100%; max-height: 80vh; object-fit: contain; border-radius: var(--radius-sm); box-shadow: 0 30px 80px -20px rgba(0, 0, 0, .7); background: #fff; }
+.lightbox__figure figcaption { margin-top: .9rem; text-align: center; color: #c9d4df; font-size: .9rem; }
+.lightbox__close {
+  position: absolute; top: 1.2rem; right: 1.2rem; width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center; color: #fff; background: rgba(255, 255, 255, .1); transition: background .2s, transform .3s var(--ease);
+}
+.lightbox__close:hover { background: rgba(255, 255, 255, .2); transform: rotate(90deg); }
 
 /* ---------- Terminal ---------- */
 .terminal { border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow); background: var(--term-bg); }
